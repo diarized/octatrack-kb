@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "octatrack-kb": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "server.octatrack_mcp"],
+      "cwd": "/ABSOLUTE/PATH/TO/octatrack-kb",
+      "env": {
+        "OCTATRACK_DB": "/ABSOLUTE/PATH/TO/octatrack-kb/server/kb.db",
+        "OCTATRACK_REFERENCE": "/ABSOLUTE/PATH/TO/octatrack-kb/knowledge/reference",
+        "OCTATRACK_CONCEPTS": "/ABSOLUTE/PATH/TO/octatrack-kb/knowledge/concepts.yaml",
+        "OCTATRACK_GUIDES": "/ABSOLUTE/PATH/TO/octatrack-kb/knowledge/guides"
+      }
+    }
+  }
+}
